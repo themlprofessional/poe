@@ -1,0 +1,28 @@
+Sure, here's a text-based box visualization of the order of SQL operations in SQL Server:
+
+```
+1. FROM / JOIN
+2. WHERE
+3. GROUP BY
+4. HAVING
+5. SELECT
+6. DISTINCT
+7. ORDER BY
+8. TOP / OFFSET-FETCH
+```
+
+This is the typical order in which SQL operations are processed. It's important to note that this is not necessarily the order in which you write the clauses in a SQL statement. The actual order in a SQL statement is typically: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY. 
+
+However, SQL Server processes the FROM clause first to identify the tables being worked with and how they are connected. WHERE filters records before grouping occurs with GROUP BY. HAVING filters after grouping. SELECT and DISTINCT operate on the results of the previous steps, and ORDER BY sorts the final result set.
+
+For a simple mnemonic to remember the order, you could use: "For Whales, Great Happiness, Sea Dives Often Offer Tranquility."
+
+- **F**or: FROM
+- **W**hales: WHERE
+- **G**reat: GROUP BY
+- **H**appiness: HAVING
+- **S**ea: SELECT
+- **D**ives: DISTINCT
+- **O**ften: ORDER BY
+- **O**ffer: OFFSET-FETCH
+- **T**ranquility: TOP
